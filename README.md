@@ -6,13 +6,15 @@ M60V, S68F, L79R and V151I.
 Which variants (if any) have evidence of pathogenicity, what could be the structural mechanism?
 
 2. In the lecture, we used AlphaFold 3 to
-[comprensively model all protein-protein interactions](https://www.biorxiv.org/content/10.1101/2025.07.01.662654v2) in Mgen, a small bacterium with of proteins.
+[comprensively model all protein-protein interactions](https://www.biorxiv.org/content/10.1101/2025.07.01.662654v2) in Mgen, a small bacterium with 476 proteins.
 Specifically, modelling proteins in randomly sampled pools recapitulated known interactions better than modelling proteins as individual pairs.
 Here we try to recapitulate this on a
 [tRNA pseudouridine synthase](https://www.sciencedirect.com/science/article/pii/S009286742400059X#figs3)
 that consistently forms a homodimer across the tree of life.
 We'll use AlphaFold 3 to predict structures using pairs/pools from different species, and ask whether interface confidence (ipTM) scores from pairs/pools re-identify the native pairing.
-Use [this notebook](https://colab.research.google.com/github/jurgjn/25-biomol-interactions/blob/master/pairs_vs_pools.ipynb) to run AlphaFold 3, and
+Use
+[this notebook](https://colab.research.google.com/github/jurgjn/25-biomol-interactions/blob/master/pairs_vs_pools.ipynb)
+to run AlphaFold 3, and
 [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1qWjx0nrNOh3cBIgzZCWQJiLDXNKz5O-cidhW51z33MM/edit?usp=sharing)
 to gather your results.
 
