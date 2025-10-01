@@ -1,5 +1,5 @@
-# Practical 5: Integrating structural modelling with genomics
-## [Integrative modelling of biomolecular interactions](https://meetings.embo.org/event/25-biomol-interactions)
+## Practical 5: Integrating structural modelling with genomics
+### [Integrative modelling of biomolecular interactions](https://meetings.embo.org/event/25-biomol-interactions)
 
 1. Use [ProtVar](https://www.ebi.ac.uk/ProtVar/) to look up the following four missense variants on the EHD3 gene:
 M60V, S68F, L79R and V151I.
@@ -18,12 +18,12 @@ to run AlphaFold 3, and
 [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1103OWovkE-2Whte-4H-9LV1mvKfQS9mXqgFhY45PTGI/edit?usp=sharing)
 to gather your results.
 
-3. AlphaFold 3 can model covalent bonds between a ligand and a polymer (protein, DNA, RNA) but cannot model covalent bonds between polymers (e.g. cyclic peptide, ubiquitination, zero-crosslinks).
-We can bypass this limitation by treating the relevant residue/nucleic acid as a ligand. 
-Use this
+3. AlphaFold 3 can model covalent bonds between a ligand and a polymer (protein, DNA, RNA) but cannot model covalent bonds between polymers (e.g. cyclic peptide, ubiquitination, zero-crosslinks, NA-protein covalent bonds).
+We can bypass this limitation by treating one of the residues/nucleic acids as a ligand. 
+The
 [example notebook](https://colab.research.google.com/github/jurgjn/25-biomol-interactions/blob/master/polymer_bonds.ipynb)
-to model
+illustrates this on
 [cycloviolacin O1](https://www.rcsb.org/structure/1DF6),
-a macrocyclic peptide.
-[Here's](https://github.com/jurgjn/alphafold3-polymer-bonds/blob/main/NOTES.md#residuenucleotide-atom-names)
-a table for looking up CCD residue/atom names as used by AlphaFold3.
+a macrocyclic peptide, and a
+[K11/K48-linked tri-ubiquitin](https://www.rcsb.org/structure/6OQ1).
+Compare the baseline (sequence-only) and covalently bonded AlphaFold 3 predictions to the corresponding experimental structures.
